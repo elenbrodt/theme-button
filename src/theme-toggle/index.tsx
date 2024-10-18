@@ -13,7 +13,7 @@ export default function ThemeToggle() {
   if (!mounted) {
     return null; //this is needed so it loads correctly everytime the page reload
   }
-
+  //probably to use this component you will need to remove the margins, it was added only to work here in sandbox
   return (
     <div className="w-fit flex">
       <Switch
@@ -22,19 +22,18 @@ export default function ThemeToggle() {
         onChange={() => {
           setTheme(theme === "dark" ? "light" : "dark");
         }}
-        className="group w-[300px] relative inline-flex h-8 w-16 flex-shrink-0 cursor-pointer 
-				rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200
-				 ease-in-out focus:outline-none bg-blue-500  focus:ring-offset-2 data-[checked]:bg-gray-700"
+        className="group relative inline-flex h-8 w-16 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200
+				 ease-in-out focus:outline-none focus:ring-offset-2 data-[checked]:bg-gray-700 "
       >
         <span
           aria-hidden="true"
-          className="pointer-events-none inline-block h-7 w-7 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out group-data-[checked]:translate-x-8"
+          className="-ml-5 -mt-2 pointer-events-none inline-block h-7 w-7 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out group-data-[checked]:translate-x-8"
         >
           <div className="w-full h-full flex justify-center items-center text-gray-300">
             {theme === "dark" ? (
               <MoonIcon className=" text-blue-300 " width={20} />
             ) : (
-              <SunIcon className="text-orange" width={24} />
+              <SunIcon className="text-orange-300" width={24} />
             )}
           </div>
         </span>
