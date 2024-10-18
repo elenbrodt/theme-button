@@ -1,30 +1,8 @@
-# React + TypeScript + Vite
+# React + TypeScript + Tailwind + HeadlessUi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This templates provides a theme toggle button to be used in React projects. The toggle was build with HeadlessUi and Tailwind, and it is a cool toggle that switches from sun (light mode) to moon (dark mode). 
 
-Currently, two official plugins are available:
+Enjoy it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Captura de tela de 2024-10-18 14-58-33](https://github.com/user-attachments/assets/b587e0da-ae39-41d3-a139-0aa7365f8e0f)
+![image](https://github.com/user-attachments/assets/524bbd31-1fb7-4457-a13e-46fb7023e358)
