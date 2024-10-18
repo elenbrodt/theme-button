@@ -22,7 +22,7 @@ export default function ThemeToggle() {
         onChange={() => {
           setTheme(theme === "dark" ? "light" : "dark");
         }}
-        className="group relative inline-flex h-8 w-16 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200
+        className="group relative inline-flex h-8 w-16 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-300 transition-colors duration-200
 				 ease-in-out focus:outline-none focus:ring-offset-2 data-[checked]:bg-gray-700 "
       >
         <span
